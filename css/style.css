@@ -25,9 +25,21 @@ button {
  cursor: pointer;
 }
 
+address {
+ font-style: normal;
+}
+
+.container {
+ width: 1440px;
+ padding-left: 15px;
+ padding-right: 15px;
+ margin: 0 auto;
+}
+
 .link {
  text-decoration: none;
 }
+
 
 
 /*-------------heder--------------*/
