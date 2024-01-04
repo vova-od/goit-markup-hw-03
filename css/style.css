@@ -51,6 +51,15 @@ address {
  padding-bottom: 24px;
 }
 
+.header-container {
+  display: flex;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
  color: #4d5ae5;
  font-family: Raleway, sans-serif;
@@ -59,10 +68,18 @@ address {
  line-height: 1.17;
  letter-spacing: 0.03em;
  text-transform: uppercase;
+ display: flex;
+ margin-left: -6px;
 }
 
 .header-logo-span {
  color: #2E2F42;
+}
+
+.header-menu-list {
+  display: flex;
+  margin-left: 82px;
+  gap: 40px;
 }
 
 .header-menu-link {
@@ -78,6 +95,12 @@ address {
 .header-menu-link:focus,
 .header-menu-link:active {
  color: #404bbf;
+}
+
+.header-contacts-list {
+  display: flex;
+  margin-left: 332px;
+  gap: 40px;
 }
 
 /*! ------------------------------------- */
@@ -129,6 +152,7 @@ address {
 
 
 .hero-btn {
+  padding: 16px 32px;
  color: #FFF;
  font-family: inherit;
  font-size: 16px;
@@ -138,6 +162,7 @@ address {
  letter-spacing: 0.04em;
  cursor: pointer;
  background-color: #4D5AE5;
+ display: flex;
 }
 
 .hero-btn:hover,
