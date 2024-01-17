@@ -1,8 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto, sans-serif;
   color: #434455;
   background-color: #FFFFFF;
 }
+
+
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
 
 p,h1,h2,h3,h4,h5,h6 {
 margin-top: 0;
@@ -175,8 +188,9 @@ img {
   display: flex;
   display: block;
   max-width: 496px;
-  margin-left: 472px;
+  margin: 0 auto;
 }
+
 
 
 .hero-btn {
@@ -232,9 +246,7 @@ img {
 .features-item {
   max-width: 264px;
   flex-basis: calc((100% - 3 * 24px) / 4);
-    }
-
-
+}
 
 .features-subtitle {
   color: var(--NAVY-BLUE, #2E2F42);
@@ -265,7 +277,7 @@ img {
   padding: 120px 0;
   background-color: #F4F4FD;
   outline: 2px solid black;
-  display: flex;
+  /* display: flex; */
 }
 
 .team-title {
@@ -277,20 +289,15 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  /* width: 162px; */
-  /* margin: 0 auto; */
-  margin-bottom: 72px;
-
-  /* padding-left: 639px;
-  padding-right: 639px; */
-  /* margin-top: 120px;
-  margin-bottom: 72px; */
+  margin: 0 auto 72px;
+  /* margin-bottom: 72px; */
 }
 
 .team-list {
   background-color: #F4F4FD;
   display: flex;
   gap: 24px;
+  margin: 0 156px;
   /* margin-bottom: 120px;
   padding-left: 156px; */
 }
@@ -298,13 +305,19 @@ img {
 .team-item {
   background-color: #FFF;
   border-radius: 0px 0px 4px 4px;
+  /* margin: 0 156px; */
 
 }
 
 .team-img {
-  margin-bottom: 32px;
-  display: block;
+  /* margin: 0 auto; */
+  /* margin-bottom: 32px; */
+  /* display: block; */
   /* display: flex; */
+}
+
+.team-personnel {
+  padding: 32px 0;
 }
 
 .team-subtitle {
@@ -324,7 +337,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 
@@ -334,7 +347,7 @@ img {
 
 .portfolio-container {
   background-color: #FFF;
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 
 .portfolio-title {
@@ -351,13 +364,14 @@ img {
 
 .portfolio-list {
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px
 }
 
 .portfolio-img {
   margin-bottom: 32px;
-  /* display: block; */
+  display: block;
 }
 
 .portfolio-subtitle {
